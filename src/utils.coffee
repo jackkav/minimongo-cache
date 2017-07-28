@@ -9,6 +9,11 @@ exports.compileDocumentSelector = compileDocumentSelector
 
 # Processes a find with sorting and filtering and limiting
 exports.processFind = (items, selector, options) ->
+  values = _.values(items)
+  if values.length
+    if typeof values[0] == 'object' and values[0]._id.substr(0, 1) == '-'
+      values[0]._id = values[0]._id.substr(1)
+
   filtered = _.filter(_.values(items), compileDocumentSelector(selector))
 
   # Handle geospatial operators
