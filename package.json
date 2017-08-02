@@ -1,7 +1,8 @@
 {
-  "name": "@jackkav/minimongo-cache",
+  "name": "ihealth-minimongo-cache",
   "version": "0.0.50",
   "description": "Fork of minimongo designed for caching, hacky fork of that fork to allow login with uuid",
+  "private": false,
   "main": "index.js",
   "scripts": {
     "test": "testem ci -s phantomjs",
