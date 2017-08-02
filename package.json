@@ -1,14 +1,14 @@
 {
-  "name": "@ihealth/minimongo-cache",
+  "name": "@jackkav/minimongo-cache",
   "version": "0.0.50",
-  "description": "Fork of minimongo designed for caching",
+  "description": "Fork of minimongo designed for caching, hacky fork of that fork to allow login with uuid",
   "main": "index.js",
   "scripts": {
     "test": "testem ci -s phantomjs",
     "prepublish": "gulp"
   },
   "license": "LGPLv3",
-  "homepage": "https://github.com/petehunt/minimongo-cache",
+  "homepage": "https://github.com/jackkav/minimongo-cache",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "bowser": "^0.7.1",
